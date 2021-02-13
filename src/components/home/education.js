@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import './education.css';
+import './homeComponent.css'
 
 class Education extends React.Component {
     
@@ -22,7 +24,7 @@ class Education extends React.Component {
 
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid" id="Education">
                 <h2>Education</h2>
                 <br></br><br></br>
                 {listEducation.map((v) =>

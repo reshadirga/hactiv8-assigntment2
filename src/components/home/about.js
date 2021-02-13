@@ -1,11 +1,12 @@
 import React from "react";
+import './about.css';
 
 class About extends React.Component {
     render() {
     
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid" id="About">
                 <div className="aboutHeader">
                     <h1>Lorem</h1>
                     <h1 className="headerRight">Ipsum</h1>

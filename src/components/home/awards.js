@@ -15,7 +15,7 @@ class Awards extends React.Component {
 
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid" id="Awards">
                 <h2>AWARDS & CERTIFICATION</h2>
                 <ul>
                     {listAwards?.map((awards) =>

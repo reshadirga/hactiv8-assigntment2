@@ -1,4 +1,6 @@
 import React from "react";
+import './experience.css';
+import './homeComponent.css';
 
 class Experience extends React.Component {
 
@@ -29,7 +31,7 @@ class Experience extends React.Component {
     
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid" id="Experience">
                 <h2>Experience</h2>
                 <br></br><br></br>
                 {listExperience.map((v) =>

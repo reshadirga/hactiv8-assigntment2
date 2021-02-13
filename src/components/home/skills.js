@@ -9,7 +9,7 @@ class Skills extends React.Component {
 
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid" id="Skills">
                 <h2>Skills</h2>
                 <br></br><br></br>
                 <h4>Programming Languages & Tools</h4>
