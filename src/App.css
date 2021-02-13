@@ -88,10 +88,19 @@
   html {
     font-size: 80%;
   }
+
+  svg {
+    height: calc(.8*16px);
+    width: calc(.8*16px);
+  }
 }
 
 @media screen and (max-width: 550px) {
   html {
     font-size: 60%;
+  }
+  svg {
+    height: calc(.6*16px);
+    width: calc(.6*16px);
   }
 }
