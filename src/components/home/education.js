@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from "react-moment";
 import './education.css';
 import './homeComponent.css'
 
@@ -10,14 +11,16 @@ class Education extends React.Component {
         {
             campus: "LoremIpsum Institute of Information Technology",
             degree: "Bachelor of Tehnology",
-            date: "September 2010 - July 2013",
+            dateFrom: "09/02/2010",
+            dateTo:"07/15/2013",
             description: "12.34"
         },
 
         {
             campus: "LoremIpsum Institute of Information Technology",
             degree: "Master of Technology",
-            date: "January 2015 - December 2016",
+            dateFrom: "01/15/2015",
+            dateTo: "12/16/2016",
             description: "10.11"
         },
     ]
@@ -37,7 +40,11 @@ class Education extends React.Component {
                             <br></br>
                         </div>
                         <div className="col-4">
-                            <p className="educationDate">{v.date}</p>
+                            <p className="educationDate">
+                                <Moment format="MMMM YYYY">{v.dateFrom}</Moment>
+                                {" - "}
+                                {v.dateTo === Date.now() ? "Present" : <Moment format="MMMM YYYY">{v.dateTo}</Moment>}
+                            </p>
                         </div>
                     </div>
                 )}
